@@ -5,15 +5,15 @@ const ExpenseForm = () => {
     return <form>
     <div className='new-expense__controls'>
         <div className='new_expense__control'>
-            <label><strong>Title</strong></label>
+            <label>Title</label>
             <input type="text"></input>
         </div>
         <div className='new_expense__control'>
-            <label><strong>Amount</strong></label>
+            <label>Amount</label>
             <input type="number" min="0.01" step="0.01"></input>
         </div>
         <div className='new_expense__control'>
-            <label><strong>Date</strong></label>
+            <label>Date</label>
             <input type="date" min="2019-01-01" max="2025-01-01"></input>
         </div>
         <div className='new-expense__actions'>
