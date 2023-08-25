@@ -10,8 +10,9 @@ const NewExpense = () => {
         };
         console.log(expenseData);
     }
-    return <div className= 'new-expense'>
-       <ExpenseForm onSaveExpensedata= {saveExpenseDataHandler}/>
+    return (<div className= 'new-expense'>
+       <ExpenseForm onSaveExpenseData= {saveExpenseDataHandler}/>
     </div>
+    )
 };
-export default NewExpense;
+export default NewExpense; 

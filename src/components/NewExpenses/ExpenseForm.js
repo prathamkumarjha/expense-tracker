@@ -23,15 +23,15 @@ const ExpenseForm = (props) => {
         event.preventDefault();
       const  expenseData ={
         title:enteredTitle,
-        date:enteredDate,
-        amount:enteredAmount
-        }
+        amount:enteredAmount,
+        date: new Date(enteredDate)
+       }
         props.onSaveExpenseData(expenseData);
         setEnteredTitle('');
         setEnteredDate('');
         SetEnteredAmount('');
     }
-        return <form onSubmit={submitHandler}>
+        return (<form onSubmit={submitHandler}>
     <div className='new-expense__controls'>
         <div className='new_expense__control'>
             <label>Title</label>
@@ -50,5 +50,6 @@ const ExpenseForm = (props) => {
         </div>
     </div>
 </form>
+        )
 };
 export default ExpenseForm;
